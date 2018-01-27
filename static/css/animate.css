@@ -1,0 +1,43 @@
+@charset "utf-8";
+@keyframes translateY {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes scale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.animate-init-translateY-top {
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.animate-init-translateY-bottom {
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(100%);
+}
+.animate-init-scale-small {
+    opacity: 0;
+    transition: 1.5s;
+    transform: scale(0);
+}
+.animate-done { animation: translateY 1s ease-in-out both; }
+.animate-done-scale { animation: scale 1s ease-in-out .35s both; }
+.screen-1-tt,
+.screen-1-intro,
+.screen-1-phone { animation-delay: .35s; }
+.screen-2-phone { animation-duration: 1.2s; }
+.screen-4-sort-red { animation-delay: .35s; }
+.screen-4-sort-gold { animation-delay: .5s; }
+.screen-4-sort-gray { animation-delay: .65s; }
+.screen-4-sort-black { animation-delay: .8s; }
+.buy-btn { transition: .75s; }
+.buy-btn:hover {
+    box-shadow: 0 10px 4px 0 rgba(0,0,0,.5);
+    transform: translateY(-5px);
+}
